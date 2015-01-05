@@ -7,8 +7,8 @@ config()
 		die "Failed to find a compatible externally provided Python 2.7."
 	fi
 
-	dyldfallback = which python | sed 's/python//g' | sed 's/bin\///g'
-        envPrepend(DYLD_FALLBACK_LIBRARY_PATH, dyldfallback/lib)
+	dyldfallback = which python | sed 's/python//g' | sed 's/bin/lib/g'
+        envPrepend(DYLD_FALLBACK_LIBRARY_PATH, $dyldfallback/lib)
         echo 'DYLD_FALLBACK_LIBRARY_PATH'
         echo $DYLDFALLBACK_LIBRARY_PATH
 
