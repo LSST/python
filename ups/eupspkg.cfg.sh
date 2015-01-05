@@ -8,9 +8,9 @@ config()
 	fi
 
 	dyldfallback = which python | sed 's/python//g' | sed 's/bin/lib/g'
-        envPrepend(DYLD_FALLBACK_LIBRARY_PATH, $dyldfallback)
+        
         echo 'DYLD_FALLBACK_LIBRARY_PATH'
-        echo $DYLDFALLBACK_LIBRARY_PATH
+        echo $dyldfallback
 
 
 }
