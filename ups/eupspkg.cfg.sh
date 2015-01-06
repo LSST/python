@@ -18,4 +18,6 @@ install()
 	pp=$pp'lib'
 	export DYLD_FALLBACK_LIBRARY_PATH=$pp:$DYLD_FALLBACK_LIBRARY_PATH
 	default_install
+	echo "DYLD_FALLBACK_LIBRARY_PATH(eups)"
+	echo $DYLD_FALLBACK_LIBRARY_PATH
 }
