@@ -14,11 +14,8 @@ build() { :; }
 
 install()
 {
-
 	pp=$(which python | sed 's/python//g' | sed 's/bin\///g')
 	pp=$pp'lib'
 	export DYLD_FALLBACK_LIBRARY_PATH=$pp:$DYLD_FALLBACK_LIBRARY_PATH
-
-	default_install()
-
+	default_install
 }
