@@ -1,1 +1,1 @@
-envPrepend(DYLD_FALLBACK_LIBRARY_PATH, ${(which python | sed 's/python//g' | sed 's/bin\///g')}/lib)
+envPrepend(DYLD_FALLBACK_LIBRARY_PATH, ${which python | sed 's/python//g' | sed 's/bin\///g'}/lib)
