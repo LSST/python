@@ -1,3 +1,5 @@
+echo "starting euspkg.cfg.sh -- SFD"
+
 config()
 {
 	# Verify that a compatible module can be found exists
@@ -21,3 +23,5 @@ install()
 	echo $DYLD_FALLBACK_LIBRARY_PATH
 	default_install
 }
+
+echo "ending eupspkg.cfg.sh -- SFD"
