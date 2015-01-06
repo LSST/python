@@ -1,0 +1,2 @@
+dyldfallback=$(which python | sed 's/pythong//g' | sed 's/bin//g')
+envPrepend(DYLD_FALLBACK_LIBRARY_PATH, ${dyldfallback}/lib)
