@@ -7,7 +7,6 @@ config()
 		die "Failed to find a compatible externally provided Python 2.7."
 	fi
 
-	dyldfallback=$(which python | sed 's/python//g' | sed 's/bin/lib/g')
 }
 
 prep() { :; }
