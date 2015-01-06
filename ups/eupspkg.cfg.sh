@@ -12,7 +12,8 @@ config()
 prep() { :; }
 build() { :; }
 
-install(){
+install()
+{
 
 	pp=$(which python | sed 's/python//g' | sed 's/bin\///g')
 	pp=$pp'lib'
