@@ -8,8 +8,9 @@ config()
 	fi
 
 	dyldfallback=$(which python | sed 's/python//g' | sed 's/bin/lib/g')
-        export DYLD_FALLBACK_LIBRARY_PATH=$dyldfallback:$DYLD_FALLBACK_LIBRARY_PATH
-
+	export DYLD_FALLBACK_LIBRARY_PATH=$dyldfallback:$DYLD_FALLBACK_LIBRARY_PATH
+	echo "DYLD_FALLBACK_LIBRARY_PATH"
+	echo $DYLD_FALLBACK_LIBRARY_PATH
 }
 
 prep() { :; }
